@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<div class="sidebar">
+    <h2 onclick="location.href='admin-dashboard.html'" style="cursor:pointer;">
+        Admin Panel
+    </h2>
+    <ul>
+        <li onclick="location.href='admin-dashboard.html'">Dashboard</li>
+        <li onclick="location.href='manage-users.html'">Manage Users</li>
+        <li onclick="location.href='manage-leads.html'">Manage Leads</li>
+        <li onclick="location.href='manage-courses.html'">Manage Courses</li>
+        <li onclick="location.href='reports.html'">Reports</li>
+        <li onclick="location.href='login.html'">Logout</li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <h1>Manage Users</h1>
+
+    <!-- ADD USER FORM -->
+    <h2>Add / Update User</h2>
+    <div class="form-box">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Mobile">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="User ID">
+        <input type="password" placeholder="Password">
+
+        <select>
+            <option>Select Role</option>
+            <option>Admin</option>
+            <option>Counselor</option>
+            <option>Manager</option>
+        </select>
+
+        <button class="btn">Save User</button>
+    </div>
+
+    <!-- USERS TABLE -->
+    <h2>All Users</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>Counselor</td>
+            <td>rahul@email.com</td>
+            <td>
+                <button class="small-btn">Edit</button>
+                <button class="convert-btn">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Admin</td>
+            <td>priya@email.com</td>
+            <td>
+                <button class="small-btn">Edit</button>
+                <button class="convert-btn">Delete</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- ADMIN SYSTEM ACCESS -->
+    <h2>Admin System Access & Controls</h2>
+    <div class="cards">
+        <div class="card">Full System Access</div>
+        <div class="card">Add / Edit / Delete Users</div>
+        <div class="card">Assign Enquiries to Counsellors</div>
+        <div class="card">View All Enquiries</div>
+        <div class="card">View All Admissions</div>
+        <div class="card">Generate Reports</div>
+        <div class="card">Manage Courses</div>
+        <div class="card">View Trainer & Student Data</div>
+        <div class="card">System Settings Control</div>
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>
