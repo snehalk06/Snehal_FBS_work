@@ -1,17 +1,21 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
+int main() {
     int n;
-    int term=0;
+    int term = 0;
 
-    printf("Enter num: ");
-    scanf("%d",&n);
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
 
-    for(int i=1;i<=n;i++)
-    {
-        term=term*10+1;
-        printf("%d ",term);
+    printf("Series: ");
+
+    for(int i = 1; i <= n; i++) {
+        term = term * 10 + 1;   // next term create
+        printf("%d", term);
+
+        if(i < n)
+            printf(" + ");
     }
-    
+
+    return 0;
 }
